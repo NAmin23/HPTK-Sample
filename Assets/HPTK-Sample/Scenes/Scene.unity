@@ -636,6 +636,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6548039495354425329, guid: a6c3709bc80250e4782845c652700009,
+        type: 3}
+      propertyPath: leftEditorIdp
+      value: 
+      objectReference: {fileID: 1558375650}
+    - target: {fileID: 6548039495354425329, guid: a6c3709bc80250e4782845c652700009,
+        type: 3}
+      propertyPath: rightEditorIdp
+      value: 
+      objectReference: {fileID: 642138169}
     - target: {fileID: 7248684167285380027, guid: a6c3709bc80250e4782845c652700009,
         type: 3}
       propertyPath: m_Name
@@ -1013,6 +1023,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5511998643135665568}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &642138169 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6548039494583310392, guid: a6c3709bc80250e4782845c652700009,
+    type: 3}
+  m_PrefabInstance: {fileID: 376838487}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7d7d121538a474458ef5e7b57c6edaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &870499543
 GameObject:
   m_ObjectHideFlags: 0
@@ -3704,6 +3726,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f18926088bc57c489eb4cb4b283b7b8, type: 3}
+--- !u!114 &1558375650 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6548039495063904748, guid: a6c3709bc80250e4782845c652700009,
+    type: 3}
+  m_PrefabInstance: {fileID: 376838487}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7d7d121538a474458ef5e7b57c6edaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1612728654
 GameObject:
   m_ObjectHideFlags: 0
@@ -3994,6 +4028,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 1639210525}
   m_maskType: 0
+  _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
 --- !u!23 &1639210525
@@ -4417,6 +4452,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 2010539306}
   m_maskType: 0
+  _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
 --- !u!23 &2010539306
@@ -4615,12 +4651,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d15de70d95a419b45acb6e5ca9092518, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 0}
   centerOfMass: {fileID: 0}
   targets: []
   colliders: []
   collisionNotifier: {fileID: 0}
   triggerNotifiers: []
   safeMode: 1
+  gradualMode: 1
   maxVelocity: 20
   maxAngularVelocity: 12.5
   maxDepenetrationVelocity: 1
@@ -4630,9 +4668,9 @@ MonoBehaviour:
   onInit:
     m_PersistentCalls:
       m_Calls: []
-  disableEditModeAfterFrames: -1
   axis: {fileID: 0}
   axisScale: 0.02
+  editMode: 1
   ignoring: []
 --- !u!1 &2091436567200739979
 GameObject:
